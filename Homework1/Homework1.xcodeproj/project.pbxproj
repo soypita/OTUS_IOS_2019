@@ -12,6 +12,11 @@
 		AF02FD222316A50E0068519A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF02FD202316A50E0068519A /* Main.storyboard */; };
 		AF02FD242316A5100068519A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF02FD232316A5100068519A /* Assets.xcassets */; };
 		AF02FD272316A5100068519A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF02FD252316A5100068519A /* LaunchScreen.storyboard */; };
+		AF02FD2F2316A7980068519A /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF02FD2E2316A7980068519A /* MyButton.swift */; };
+		AF02FD322316A9360068519A /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF02FD302316A9360068519A /* Detail.storyboard */; };
+		AF02FD342316AE160068519A /* CustomComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF02FD332316AE160068519A /* CustomComponent.xib */; };
+		AF02FD362316AE230068519A /* CustomComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF02FD352316AE230068519A /* CustomComponent.swift */; };
+		AF02FD382316B48E0068519A /* CustomSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF02FD372316B48E0068519A /* CustomSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		AF02FD232316A5100068519A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF02FD262316A5100068519A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF02FD282316A5100068519A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF02FD2E2316A7980068519A /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		AF02FD312316A9360068519A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Homework1/Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
+		AF02FD332316AE160068519A /* CustomComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomComponent.xib; sourceTree = "<group>"; };
+		AF02FD352316AE230068519A /* CustomComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponent.swift; sourceTree = "<group>"; };
+		AF02FD372316B48E0068519A /* CustomSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,17 @@
 		AF02FD1B2316A50E0068519A /* Homework1 */ = {
 			isa = PBXGroup;
 			children = (
+				AF02FD302316A9360068519A /* Detail.storyboard */,
 				AF02FD1C2316A50E0068519A /* AppDelegate.swift */,
 				AF02FD1E2316A50E0068519A /* ViewController.swift */,
 				AF02FD202316A50E0068519A /* Main.storyboard */,
 				AF02FD232316A5100068519A /* Assets.xcassets */,
 				AF02FD252316A5100068519A /* LaunchScreen.storyboard */,
 				AF02FD282316A5100068519A /* Info.plist */,
+				AF02FD2E2316A7980068519A /* MyButton.swift */,
+				AF02FD332316AE160068519A /* CustomComponent.xib */,
+				AF02FD352316AE230068519A /* CustomComponent.swift */,
+				AF02FD372316B48E0068519A /* CustomSplitViewController.swift */,
 			);
 			path = Homework1;
 			sourceTree = "<group>";
@@ -125,6 +140,8 @@
 				AF02FD272316A5100068519A /* LaunchScreen.storyboard in Resources */,
 				AF02FD242316A5100068519A /* Assets.xcassets in Resources */,
 				AF02FD222316A50E0068519A /* Main.storyboard in Resources */,
+				AF02FD322316A9360068519A /* Detail.storyboard in Resources */,
+				AF02FD342316AE160068519A /* CustomComponent.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +154,9 @@
 			files = (
 				AF02FD1F2316A50E0068519A /* ViewController.swift in Sources */,
 				AF02FD1D2316A50E0068519A /* AppDelegate.swift in Sources */,
+				AF02FD362316AE230068519A /* CustomComponent.swift in Sources */,
+				AF02FD382316B48E0068519A /* CustomSplitViewController.swift in Sources */,
+				AF02FD2F2316A7980068519A /* MyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +177,14 @@
 				AF02FD262316A5100068519A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AF02FD302316A9360068519A /* Detail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF02FD312316A9360068519A /* Base */,
+			);
+			name = Detail.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
