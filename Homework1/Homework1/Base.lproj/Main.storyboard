@@ -160,7 +160,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-yX-9WV" customClass="MyButton" customModule="Homework1" customModuleProvider="target">
                                 <rect key="frame" x="166" y="435.5" width="82" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="82" id="cuz-YU-LlK"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="cuz-YU-LlK"/>
                                     <constraint firstAttribute="height" constant="30" id="mvS-qE-921"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>

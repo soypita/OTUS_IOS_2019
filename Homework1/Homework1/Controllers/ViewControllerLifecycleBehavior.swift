@@ -61,7 +61,12 @@ final class TimerControllerBehavior: ViewControllerLifecycleBehavior {
 struct ChangeBlackColorBehavior: ViewControllerLifecycleBehavior {
     func beforeAppearing(_ viewController: UIViewController) {
         viewController.view.backgroundColor = .black
+        viewController.navigationController?.navigationBar.barStyle = .black
         UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    func beforeDisappearing(_ viewController: UIViewController) {
+        UIApplication.shared.statusBarStyle = .default
     }
 }
 
