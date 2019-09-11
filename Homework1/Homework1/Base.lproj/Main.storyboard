@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bench Mark View Controller-->
         <scene sceneID="F4x-Ez-nG4">
             <objects>
-                <viewController id="xQ9-sf-frY" sceneMemberID="viewController">
+                <viewController id="xQ9-sf-frY" customClass="BenchMarkViewController" customModule="Homework1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ugo-II-aKe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,8 +57,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmE-3Q-Fi5">
-                                <rect key="frame" x="184" y="489" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="171.5" y="489" width="71" height="30"/>
+                                <state key="normal" title="To second"/>
+                                <connections>
+                                    <segue destination="fDa-Qb-ycj" kind="show" id="dM7-gF-arX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2y6-io-haM">
                                 <rect key="frame" x="186" y="440" width="42" height="21"/>
@@ -82,10 +85,74 @@
             </objects>
             <point key="canvasLocation" x="1664" y="-2156"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
+        <scene sceneID="CYM-ja-RaY">
+            <objects>
+                <viewController id="fDa-Qb-ycj" customClass="SecondViewController" customModule="Homework1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LgS-jB-9Pd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxH-AM-bWI">
+                                <rect key="frame" x="180.5" y="435.5" width="53" height="30"/>
+                                <state key="normal" title="To third"/>
+                                <connections>
+                                    <segue destination="34C-22-JOp" kind="show" id="ZLi-LI-6Vi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cO-fi-uCc">
+                                <rect key="frame" x="149" y="496" width="116" height="30"/>
+                                <state key="normal" title="To third with pop"/>
+                                <connections>
+                                    <segue destination="34C-22-JOp" kind="show" identifier="showWithPop" id="WzN-6j-3y4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XxH-AM-bWI" firstAttribute="centerY" secondItem="fh5-SP-a82" secondAttribute="centerY" id="1EH-f7-uvk"/>
+                            <constraint firstItem="XxH-AM-bWI" firstAttribute="centerX" secondItem="fh5-SP-a82" secondAttribute="centerX" id="ci4-Ya-v2t"/>
+                            <constraint firstItem="6cO-fi-uCc" firstAttribute="top" secondItem="XxH-AM-bWI" secondAttribute="bottom" constant="30.5" id="ytH-PS-yok"/>
+                            <constraint firstItem="6cO-fi-uCc" firstAttribute="centerX" secondItem="fh5-SP-a82" secondAttribute="centerX" id="zLX-FB-Cf6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fh5-SP-a82"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5Q-BZ-0DA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517" y="-2156"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="aFS-Ao-gyB">
+            <objects>
+                <viewController id="34C-22-JOp" customClass="ThirdViewController" customModule="Homework1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fLr-jM-ehA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is last VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHl-ek-kmC">
+                                <rect key="frame" x="153" y="440" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zHl-ek-kmC" firstAttribute="centerX" secondItem="JQq-Hd-Asg" secondAttribute="centerX" id="1Zb-it-teb"/>
+                            <constraint firstItem="zHl-ek-kmC" firstAttribute="centerY" secondItem="JQq-Hd-Asg" secondAttribute="centerY" id="xc4-dm-Axy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JQq-Hd-Asg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Gc-7L-625" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3414" y="-2160"/>
+        </scene>
+        <!--Profile View Controller-->
         <scene sceneID="1qY-ts-hIF">
             <objects>
-                <viewController id="ahl-QE-HWP" sceneMemberID="viewController">
+                <viewController id="ahl-QE-HWP" customClass="ProfileViewController" customModule="Homework1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1dz-8N-HRd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +160,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-yX-9WV" customClass="MyButton" customModule="Homework1" customModuleProvider="target">
                                 <rect key="frame" x="166" y="435.5" width="82" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="82" id="cuz-YU-LlK"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="cuz-YU-LlK"/>
                                     <constraint firstAttribute="height" constant="30" id="mvS-qE-921"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -244,4 +311,7 @@
             <point key="canvasLocation" x="255" y="29"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WzN-6j-3y4"/>
+    </inferredMetricsTieBreakers>
 </document>
