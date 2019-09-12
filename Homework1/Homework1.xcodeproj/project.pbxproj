@@ -19,6 +19,7 @@
 		AF16BDEB2321664800E4F314 /* BenchMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16BDEA2321664800E4F314 /* BenchMarkViewController.swift */; };
 		AF16BDF02321671200E4F314 /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16BDED2321666200E4F314 /* ViewControllerLifecycleBehavior.swift */; };
 		AF16BDF223216A4900E4F314 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16BDF123216A4900E4F314 /* ProfileViewController.swift */; };
+		AFCA2CD7232AC4AE00F77858 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA2CD6232AC4AE00F77858 /* FirstViewController.swift */; };
 		AFD19ED22323127A00DB0590 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD19ED12323127A00DB0590 /* SecondViewController.swift */; };
 		AFD19ED42323128500DB0590 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD19ED32323128500DB0590 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		AF16BDEA2321664800E4F314 /* BenchMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchMarkViewController.swift; sourceTree = "<group>"; };
 		AF16BDED2321666200E4F314 /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
 		AF16BDF123216A4900E4F314 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AFCA2CD6232AC4AE00F77858 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		AFD19ED12323127A00DB0590 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AFD19ED32323128500DB0590 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				AF16BDF123216A4900E4F314 /* ProfileViewController.swift */,
 				AFD19ED12323127A00DB0590 /* SecondViewController.swift */,
 				AFD19ED32323128500DB0590 /* ThirdViewController.swift */,
+				AFCA2CD6232AC4AE00F77858 /* FirstViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				AF02FD1D2316A50E0068519A /* AppDelegate.swift in Sources */,
 				AF16BDEB2321664800E4F314 /* BenchMarkViewController.swift in Sources */,
 				AF02FD362316AE230068519A /* CustomComponent.swift in Sources */,
+				AFCA2CD7232AC4AE00F77858 /* FirstViewController.swift in Sources */,
 				AF16BDF02321671200E4F314 /* ViewControllerLifecycleBehavior.swift in Sources */,
 				AF16BDF223216A4900E4F314 /* ProfileViewController.swift in Sources */,
 				AF02FD382316B48E0068519A /* CustomSplitViewController.swift in Sources */,
