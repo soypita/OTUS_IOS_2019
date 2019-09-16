@@ -19,8 +19,15 @@
 		AF16BDEB2321664800E4F314 /* BenchMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16BDEA2321664800E4F314 /* BenchMarkViewController.swift */; };
 		AF16BDF02321671200E4F314 /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16BDED2321666200E4F314 /* ViewControllerLifecycleBehavior.swift */; };
 		AF16BDF223216A4900E4F314 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16BDF123216A4900E4F314 /* ProfileViewController.swift */; };
+		AF54B52C232BBC4000169041 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54B52B232BBC4000169041 /* TimerState.swift */; };
+		AFC4F9D8232BA03F00503D8B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4F9D7232BA03F00503D8B /* CustomCell.swift */; };
+		AFCA2CD7232AC4AE00F77858 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA2CD6232AC4AE00F77858 /* FirstViewController.swift */; };
 		AFD19ED22323127A00DB0590 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD19ED12323127A00DB0590 /* SecondViewController.swift */; };
 		AFD19ED42323128500DB0590 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD19ED32323128500DB0590 /* ThirdViewController.swift */; };
+		AFD203F6232FA95300107DB0 /* TableLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD203F5232FA95300107DB0 /* TableLayoutDelegate.swift */; };
+		AFD203F8232FA96100107DB0 /* ColumnLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD203F7232FA96100107DB0 /* ColumnLayoutDelegate.swift */; };
+		AFD203FB232FC17300107DB0 /* CollectionViewSelectableItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD203FA232FC17300107DB0 /* CollectionViewSelectableItemDelegate.swift */; };
+		AFD203FD232FC19300107DB0 /* DefaultCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD203FC232FC19300107DB0 /* DefaultCollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +45,15 @@
 		AF16BDEA2321664800E4F314 /* BenchMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchMarkViewController.swift; sourceTree = "<group>"; };
 		AF16BDED2321666200E4F314 /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
 		AF16BDF123216A4900E4F314 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AF54B52B232BBC4000169041 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		AFC4F9D7232BA03F00503D8B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		AFCA2CD6232AC4AE00F77858 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		AFD19ED12323127A00DB0590 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AFD19ED32323128500DB0590 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		AFD203F5232FA95300107DB0 /* TableLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayoutDelegate.swift; sourceTree = "<group>"; };
+		AFD203F7232FA96100107DB0 /* ColumnLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnLayoutDelegate.swift; sourceTree = "<group>"; };
+		AFD203FA232FC17300107DB0 /* CollectionViewSelectableItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSelectableItemDelegate.swift; sourceTree = "<group>"; };
+		AFD203FC232FC19300107DB0 /* DefaultCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCollectionViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,7 @@
 		AF02FD1B2316A50E0068519A /* Homework1 */ = {
 			isa = PBXGroup;
 			children = (
+				AF54B52A232BBC2700169041 /* Data */,
 				AF16BDEC2321664E00E4F314 /* Controllers */,
 				AF16BDE7232162B500E4F314 /* CustomView */,
 				AF02FD302316A9360068519A /* Detail.storyboard */,
@@ -88,6 +103,7 @@
 		AF16BDE7232162B500E4F314 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				AFC4F9D7232BA03F00503D8B /* CustomCell.swift */,
 				AF02FD332316AE160068519A /* CustomComponent.xib */,
 				AF02FD352316AE230068519A /* CustomComponent.swift */,
 			);
@@ -97,14 +113,43 @@
 		AF16BDEC2321664E00E4F314 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AFD203F9232FC15E00107DB0 /* Protocols */,
+				AFD203EE232F7F0E00107DB0 /* Layouts */,
 				AF02FD372316B48E0068519A /* CustomSplitViewController.swift */,
 				AF16BDED2321666200E4F314 /* ViewControllerLifecycleBehavior.swift */,
 				AF16BDEA2321664800E4F314 /* BenchMarkViewController.swift */,
 				AF16BDF123216A4900E4F314 /* ProfileViewController.swift */,
 				AFD19ED12323127A00DB0590 /* SecondViewController.swift */,
 				AFD19ED32323128500DB0590 /* ThirdViewController.swift */,
+				AFCA2CD6232AC4AE00F77858 /* FirstViewController.swift */,
+				AFD203FC232FC19300107DB0 /* DefaultCollectionViewDelegate.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF54B52A232BBC2700169041 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF54B52B232BBC4000169041 /* TimerState.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AFD203EE232F7F0E00107DB0 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				AFD203F5232FA95300107DB0 /* TableLayoutDelegate.swift */,
+				AFD203F7232FA96100107DB0 /* ColumnLayoutDelegate.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		AFD203F9232FC15E00107DB0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AFD203FA232FC17300107DB0 /* CollectionViewSelectableItemDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,12 +226,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD19ED22323127A00DB0590 /* SecondViewController.swift in Sources */,
+				AFD203FB232FC17300107DB0 /* CollectionViewSelectableItemDelegate.swift in Sources */,
+				AF54B52C232BBC4000169041 /* TimerState.swift in Sources */,
 				AFD19ED42323128500DB0590 /* ThirdViewController.swift in Sources */,
+				AFC4F9D8232BA03F00503D8B /* CustomCell.swift in Sources */,
+				AFD203F6232FA95300107DB0 /* TableLayoutDelegate.swift in Sources */,
 				AF02FD1D2316A50E0068519A /* AppDelegate.swift in Sources */,
 				AF16BDEB2321664800E4F314 /* BenchMarkViewController.swift in Sources */,
 				AF02FD362316AE230068519A /* CustomComponent.swift in Sources */,
+				AFCA2CD7232AC4AE00F77858 /* FirstViewController.swift in Sources */,
 				AF16BDF02321671200E4F314 /* ViewControllerLifecycleBehavior.swift in Sources */,
+				AFD203F8232FA96100107DB0 /* ColumnLayoutDelegate.swift in Sources */,
 				AF16BDF223216A4900E4F314 /* ProfileViewController.swift in Sources */,
+				AFD203FD232FC19300107DB0 /* DefaultCollectionViewDelegate.swift in Sources */,
 				AF02FD382316B48E0068519A /* CustomSplitViewController.swift in Sources */,
 				AF02FD2F2316A7980068519A /* MyButton.swift in Sources */,
 			);
